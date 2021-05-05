@@ -8,19 +8,14 @@ packages:
 
   cray-mpich:
     externals:
-    - spec: cray-mpich@8.1.4%aocc
+    - spec: cray-mpich@8.1.4
       modules:
-      - PrgEnv-aocc/8.0.0
-      - cray-mpich/8.1.4
-    - spec: cray-mpich@8.1.4%gnu
-      modules:
-      - PrgEnv-gnu/8.0.0
       - cray-mpich/8.1.4
     buildable: False
 
   cray-fftw:
     externals:
-    - spec: cray-fftw@3.3.8.9
+    - spec: cray-fftw@3.3.8.9+mpi+openmp
       modules:
       - cray-fftw/3.3.8.9
     buildable: False
