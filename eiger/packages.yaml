@@ -1,0 +1,32 @@
+packages:
+  cray-libsci:
+    externals:
+    - spec: cray-libsci@21.04.1.1+mpi+openmp
+      modules:
+      - cray-libsci/21.04.1.1
+    buildable: False
+
+  cray-mpich:
+    externals:
+    - spec: cray-mpich@8.1.4%aocc
+      modules:
+      - PrgEnv-aocc/8.0.0
+      - cray-mpich/8.1.4
+    - spec: cray-mpich@8.1.4%gnu
+      modules:
+      - PrgEnv-gnu/8.0.0
+      - cray-mpich/8.1.4
+    buildable: False
+
+  cray-fftw:
+    externals:
+    - spec: cray-fftw@3.3.8.9
+      modules:
+      - cray-fftw/3.3.8.9
+    buildable: False
+
+  cmake:
+    externals:
+    - spec: cmake@3.20.1
+      modules:
+      - CMake/3.20.1
